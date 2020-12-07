@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+
+<body>
+    <form action="process.php" method="post">
+        <p>Mi formulario de Registro</p>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"> <br><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido"> <br><br>
+
+        <label for="email">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="email" name="email"> <br><br>
+
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password"> <br><br>
+
+        <label for="pw_confirm">Confirmación de Contraseña:</label>
+        <input type="password" id="pw_confirm" name="pw_confirm"> <br><br>
+
+        <label for="cumpleaños">cumpleaños:</label>
+        <input type="date" id="cumpleaños" name="cumpleaños"> <br><br>
+
+
+        <label for="hombre">hombre</label>
+        <input type="radio" id="hombre" name="genero" value="masculino">
+
+        <label for="mujer">mujer</label>
+        <input type="radio" id="mujer" name="genero" value="femenino">
+
+        <label for="otro">otro</label>
+        <input type="radio" id="otro" name="genero" value="prefiero-no-decir">
+
+        <p>Una breve descripcion de ti:</p><br>
+        <textarea name="descripcion" id="descripcion" cols="50" rows="10"></textarea> <br>
+        <label for="Lenguaje_Favorito">Lenguaje Favorito:</label>
+        <select name="Lenguaje_Favorito" id="Lenguaje_Favorito">
+            <option value="java script">java script</option>
+            <option value="mandarin">mandarin</option>
+            <option value="otacu">Otaku</option>
+
+          </select> <br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+
+</html>
